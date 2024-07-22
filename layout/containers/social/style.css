@@ -1,0 +1,633 @@
+#Social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--container-color);
+}
+
+#Social-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-radius: 60px;
+    border: 1px solid #CFCFCF;
+    background: var(--container-color);
+}
+
+#Social-header h2 {
+    font-weight: 700;
+    text-align: center;
+}
+
+#Social-brands {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background: var(--container-color);
+    flex-wrap: wrap;
+}
+
+#Social-brands picture {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+
+    #Social {
+        padding: 40px 0 20px 0;
+    }
+
+    #Social-header {
+        padding: 40px 0 40px 0;
+    }
+
+    #Social-header h2 {
+        font-size: 2.5rem;
+        line-height: 42px;
+    }
+
+    #Social-header .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 20px;
+    }
+
+    .OpenFormButton .PrimaryButtonLightBG {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Social-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        background: var(--container-color);
+    }
+
+    #Social-container-description h3 {
+        width: 300px;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 34px;
+        text-align: left;
+    }
+
+    #Social-container-description p {
+        width: 90%;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons {
+        width: 90%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Social-container-socialIcons img {
+        width: 64px;
+        height: 64px;
+        margin-left: 0;
+    }
+
+    #Social-container-socialIcons-facebook img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-twiter img {
+        margin-top: 124px;
+
+    }
+
+    #Social-container-socialIcons-instagram img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-tiktok img {
+        margin-top: 124px;
+    }
+    
+    #WooCommerce {
+        order: 2;
+        width: 91px;
+        height: 43px;
+        padding-right: 20px;
+    }
+
+    #Shopify {
+        order: 1;
+        width: 149px;
+        height: 42px;
+        padding-right: 20px;
+    }
+
+    #Square {
+        order: 0;
+        width: 131px;
+        height: 34px;
+        padding-right: 20px;
+    }
+
+    #Squarespace {
+        order: 3;
+        width: 196px;
+        height: 28px;
+        padding-right: 20px;
+    }
+    
+    #Clover {
+        order: 4;
+        width: 128px;
+        height: 32px;
+        padding-right: 20px;
+    }
+
+    #Social-brands {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    #Social {
+        padding: 40px 0 20px 0;
+    }
+
+    #Social-header {
+        padding: 40px 0 40px 0;
+    }
+
+    #Social-header h2 {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 42px;
+    }
+
+    #Social-header .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 20px;
+    }
+
+    .OpenFormButton .PrimaryButtonLightBG {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Social-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        background: var(--container-color);
+    }
+
+    #Social-container-description h3 {
+        width: 355px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    #Social-container-description p {
+        width: 90%;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons {
+        width: 90%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Social-container-socialIcons img {
+        width: 64px;
+        height: 64px;
+        margin-left: 0;
+    }
+
+    #Social-container-socialIcons-facebook img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-twiter img {
+        margin-top: 124px;
+
+    }
+
+    #Social-container-socialIcons-instagram img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-tiktok img {
+        margin-top: 124px;
+    }
+
+    #WooCommerce {
+        order: 2;
+        width: 91px;
+        height: 43px;
+    }
+
+    #Shopify {
+        order: 1;
+        width: 149px;
+        height: 42px;
+        margin-left: 20px;
+    }
+
+    #Square {
+        order: 0;
+        width: 131px;
+        height: 34px;
+    }
+
+    #Squarespace {
+        order: 3;
+        width: 196px;
+        height: 28px;
+        margin-left: 20px;
+    }
+
+    #Clover {
+        order: 4;
+        width: 128px;
+        height: 32px;
+    }
+
+    #Social-brands {
+        margin-top: 40px;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #Social {
+        padding: 100px 0 100px 0;
+    }
+
+    #Social-header {
+        padding: 60px 0 60px 0;
+    }
+
+    #Social-header h2 {
+        font-size: 3rem;
+        line-height: 52px;
+    }
+
+    #Social-header .OpenFormButton {
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .PrimaryButtonLightBG {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Social-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+        background: var(--container-color);
+    }
+
+    #Social-container-description h3 {
+        width: 430px;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 52px;
+        text-align: left;
+    }
+
+    #Social-container-description p {
+        width: 400px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Social-container-socialIcons img {
+        width: 64px;
+        height: 64px;
+        margin-left: 20px;
+    }
+
+    #Social-container-socialIcons-facebook img {
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons-twiter img {
+        margin-top: 110px;
+    }
+
+    #Social-container-socialIcons-instagram img {
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons-tiktok img {
+        margin-top: 110px;
+    }
+
+    #Social-brands picture {
+        margin-top: 20px;
+    }
+
+    #Social-brands {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    #Social {
+        padding: 100px 0 80px 0;
+    }
+
+    #Social-header {
+        padding: 60px 0 60px 0;
+    }
+
+    #Social-header h2 {
+        font-size: 3rem;
+        line-height: 52px;
+    }
+
+    #Social-header .OpenFormButton {
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .PrimaryButtonLightBG {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Social-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+        background: var(--container-color);
+    }
+
+    #Social-container-description h3 {
+        width: 450px;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 52px;
+        text-align: left;
+    }
+
+    #Social-container-description p {
+        width: 500px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Social-container-socialIcons img {
+        width: 90px;
+        height: 90px;
+        margin-left: 20px;
+    }
+
+    #Social-container-socialIcons-facebook img {
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons-twiter img {
+        margin-top: 110px;
+    }
+
+    #Social-container-socialIcons-instagram img {
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons-tiktok img {
+        margin-top: 110px;
+    }
+
+    #Social-brands picture {
+        margin-top: 20px;
+    }
+
+    #Social-brands {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1900px) {
+
+    #Social {
+        padding: 100px 0 80px 0;
+    }
+
+    #Social-header {
+        padding: 60px 0 60px 0;
+    }
+
+    #Social-header h2 {
+        font-size: 4rem;
+        line-height: 68px;
+    }
+
+    #Social-header .OpenFormButton {
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .PrimaryButtonLightBG {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Social-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+        background: var(--container-color);
+    }
+
+    #Social-container-description h3 {
+        width: 822px;
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 102px;
+        text-align: left;
+    }
+
+    #Social-container-description p {
+        width: 537px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Social-container-socialIcons img {
+        width: 90px;
+        height: 90px;
+        margin-left: 45px;
+    }
+
+    #Social-container-socialIcons-facebook img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-twiter img {
+        margin-top: 137px;
+    }
+
+    #Social-container-socialIcons-instagram img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-tiktok img {
+        margin-top: 137px;
+    }
+
+    #Social-brands {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        background: var(--container-color);
+        margin-top: 90px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+
+    #Social {
+        padding: 100px 0 80px 0;
+    }
+
+    #Social-header {
+        padding: 60px 0 60px 0;
+    }
+
+    #Social-header h2 {
+        font-size: 5rem;
+        line-height: 82px;
+    }
+
+    #Social-header .OpenFormButton {
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .PrimaryButtonLightBG {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Social-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+        background: var(--container-color);
+    }
+
+    #Social-container-description h3 {
+        width: 1000px;
+        font-size: 7rem;
+        font-weight: 700;
+        line-height: 120px;
+        text-align: left;
+    }
+
+
+    #Social-container-description p {
+        width: 1000px;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #Social-container-socialIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 200px;
+    }
+
+    #Social-container-socialIcons img {
+        width: 120px;
+        height: 120px;
+        margin-left: 45px;
+    }
+
+    #Social-container-socialIcons-facebook img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-twiter img {
+        margin-top: 155px;
+    }
+
+    #Social-container-socialIcons-instagram img {
+        margin-top: 45px;
+    }
+
+    #Social-container-socialIcons-tiktok img {
+        margin-top: 155px;
+    }
+
+    #Social-brands {
+        margin-top: 80px;
+    }
+
+}

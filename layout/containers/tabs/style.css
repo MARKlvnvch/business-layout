@@ -1,0 +1,56 @@
+#Tabs {
+    display: flex;
+    flex-direction: row;
+    background: var(--secondary-color);
+    margin-bottom: 71px;
+    height: 38px;
+}
+
+.Tab {
+    padding: 9px 40px 9px 40px;
+    border-radius: 20px 20px 0 0;
+    font-weight: 500;
+}
+
+#BusinessTab.active, #CustomersTab.active {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+
+    .Tab {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1800px) {
+
+    #Tabs {
+        padding-left: 5%;
+    }
+
+    .Tab {
+        width: 185px;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    #Tabs {
+        padding-left: 5%;
+    }
+
+    .Tab {
+        width: 260px;
+        font-size: 1.5rem;
+    }
+
+}

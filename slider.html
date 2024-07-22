@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="slider/style.css">
+
+    <title>Slider</title>
+
+</head>
+<body>
+
+<!--
+    Так как требований к изображениям не было. Чтобы проще было работать с изображениями в слайдере,
+    я взял картинки Смешариков, так как их 10 и так было проще определять первый и последнйи слайд.
+-->
+
+<div class="Container">
+    <button class="Previous">
+        <picture>
+            <img alt="arrow" src="slider/images/arrow.png">
+        </picture>
+    </button>
+    <div class="Slider">
+        <div class="Slides">
+            <div class="Slide">
+                <picture>
+                    <img alt="losyash" src="slider/images/losyash.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="egik" src="slider/images/egik.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="pin" src="slider/images/pin.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="kopatych" src="slider/images/kopatych.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="savunya" src="slider/images/savunya.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="krosh" src="slider/images/krosh.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="nyusha" src="slider/images/nyusha.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="barash" src="slider/images/barash.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="karych" src="slider/images/karych.jpg">
+                </picture>
+            </div>
+            <div class="Slide">
+                <picture>
+                    <img alt="nyanya" src="slider/images/nyanya.jpg">
+                </picture>
+            </div>
+        </div>
+    </div>
+    <button class="Next">
+        <picture>
+            <img alt="arrow" src="slider/images/arrow.png">
+        </picture>
+    </button>
+</div>
+
+<div class="ItemButtons">
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+    <span class="ItemButton"></span>
+</div>
+
+<script type="module" src="slider/script.js"></script>
+
+</body>
+</html>

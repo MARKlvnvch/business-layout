@@ -1,0 +1,368 @@
+/* Cookies */
+
+.CookiesModal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.CookiesModal.active {
+    display: block;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 340px) {
+
+    #CookiesModal-container {
+        width: 305px;
+        height: 422px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--form-bg);
+        box-shadow: -10px -5px 30px 0 var(--shadow-color);
+        padding: 10px;
+        margin: 160px auto;
+        border-radius: 20px;
+    }
+
+    #CookiesModal-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: var(--form-bg);
+        border-radius: 20px;
+        padding-right: 10px;
+    }
+
+    #CookiesModal-container-content {
+        width: 265px;
+        height: 56px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
+    }
+
+    #CookiesModal-container p {
+        width: 265px;
+        font-size: 1.25rem;
+        color: var(--cookie-text-color);
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    #CookiesModal-container-content-buttons {
+        width: 265px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #CookiesModal-container-content-buttons .PrimaryButtonLightBG {
+        width: 265px;
+        height: 57px;
+    }
+
+    #CookiesModal-container-content-buttons .SecondaryContactButton {
+        width: 265px;
+        height: 57px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (min-width: 340px) and (max-width: 720px) {
+
+    #CookiesModal-container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--form-bg);
+        box-shadow: -10px -5px 30px 0 var(--shadow-color);
+        padding: 10px;
+        margin: 200px auto;
+        border-radius: 20px;
+    }
+
+    #CookiesModal-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: var(--form-bg);
+        border-radius: 20px;
+        padding-right: 10px;
+    }
+
+    #CookiesModal-container-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px 20px 10px;
+    }
+
+    #CookiesModal-container p {
+        font-size: 1.25rem;
+        color: var(--cookie-text-color);
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    #CookiesModal-container-content-buttons {
+        height: 134px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    #CookiesModal-container-content-buttons .PrimaryButtonLightBG {
+        width: 295px;
+        height: 57px;
+    }
+
+    #CookiesModal-container-content-buttons .SecondaryContactButton {
+        width: 295px;
+        height: 57px;
+    }
+
+}
+
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+
+    #CookiesModal-container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--form-bg);
+        box-shadow: -10px -5px 30px 0 var(--shadow-color);
+        padding: 10px;
+        margin: 200px auto;
+        border-radius: 20px;
+    }
+
+    #CookiesModal-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: var(--form-bg);
+        border-radius: 20px;
+        padding-right: 10px;
+    }
+
+    #CookiesModal-container-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px 20px 10px;
+    }
+
+    #CookiesModal-container p {
+        font-size: 1.25rem;
+        color: var(--cookie-text-color);
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    #CookiesModal-container-content-buttons {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    #CookiesModal-container-content-buttons .PrimaryButtonLightBG {
+        width: 295px;
+        height: 57px;
+    }
+
+    #CookiesModal-container-content-buttons .SecondaryContactButton {
+        width: 295px;
+        height: 57px;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+
+    #CookiesModal-container {
+        width: 90%;
+        height: 137px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--form-bg);
+        box-shadow: -10px -5px 30px 0 var(--shadow-color);
+        padding: 10px;
+        margin: 400px auto;
+        border-radius: 20px;
+    }
+
+    #CookiesModal-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: var(--form-bg);
+        border-radius: 20px;
+        padding-right: 10px;
+        margin-top: -10px;
+    }
+
+    #CookiesModal-container-content {
+        width: 100%;
+        height: 76px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -10px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    #CookiesModal-container p {
+        width: 583px;
+        font-size: 1.25rem;
+        color: var(--cookie-text-color);
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    #CookiesModal-container-content-buttons {
+        width: 272px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1800px) {
+
+    #CookiesModal-container {
+        width: 90%;
+        height: 117px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--form-bg);
+        box-shadow: -10px -5px 30px 0 var(--shadow-color);
+        padding: 10px;
+        margin: 550px auto;
+        border-radius: 20px;
+    }
+
+    #CookiesModal-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: var(--form-bg);
+        border-radius: 20px;
+        padding-right: 10px;
+        margin-top: -10px;
+    }
+
+    #CookiesModal-container-content {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -10px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    #CookiesModal-container p {
+        width: 783px;
+        font-size: 1.25rem;
+        color: var(--cookie-text-color);
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    #CookiesModal-container-content-buttons {
+        width: 272px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    #CookiesModal-container {
+        width: 90%;
+        height: 137px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--form-bg);
+        box-shadow: -10px -5px 30px 0 var(--shadow-color);
+        padding: 10px;
+        margin: 700px auto;
+        border-radius: 20px;
+    }
+
+    #CookiesModal-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: var(--form-bg);
+        border-radius: 20px;
+        padding-right: 10px;
+        margin-top: -10px;
+    }
+
+    #CookiesModal-container-content {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -10px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    #CookiesModal-container p {
+        width: 983px;
+        font-size: 1.5rem;
+        color: var(--cookie-text-color);
+        font-weight: 300;
+        line-height: 34px;
+        text-align: left;
+    }
+
+    #CookiesModal-container-content-buttons {
+        width: 410px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #CookiesModal-container-content-buttons .PrimaryButtonLightBG {
+        width: 200px;
+    }
+
+    #CookiesModal-container-content-buttons .SecondaryContactButton {
+        width: 200px;
+    }
+
+}
+

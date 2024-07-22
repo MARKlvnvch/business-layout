@@ -1,0 +1,288 @@
+#Footer-container-nav-mobile {
+    height: 189px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#Footer-container-nav-mobile a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+#Footer-container-buttons-appstore {
+    width: 194px;
+    height: 57px;
+}
+
+#Footer-container-buttons-googleplay {
+    width: 196px;
+    height: 57px;
+}
+
+footer hr {
+    margin-top: 30px;
+    border-top: 1px solid var(--hr-color);
+}
+
+#Footer-container-buttons .OpenFormButton {
+    width: 192px;
+    height: 57px;
+}
+
+.OpenFormButton .PrimaryButtonLightBG {
+    width: 100%;
+    height: 100%;
+}
+
+#Footer-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#Footer-information p {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    color: var(--footer-text-color);
+}
+
+#Footer-information-links {
+    width: 471px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Footer-information-links a {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    color: var(--footer-text-color);
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        padding: 20px 16px 20px 16px;
+    }
+
+    #Footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #Footer-container-logo {
+        width: 124px;
+        height: 39px;
+    }
+
+    #Footer-container-nav {
+        display: none;
+    }
+
+    #Footer-container-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #Footer-container-buttons-stores {
+        height: 134px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        align-items: start;
+    }
+
+    #Footer-information-links {
+        display: none;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+
+    footer {
+        padding: 40px 60px 20px 60px;
+    }
+
+    #Footer-container {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #Footer-container-logo {
+        width: 155px;
+        height: 57px;
+    }
+
+    #Footer-container-nav {
+        width: 281px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Footer-container-nav-mobile {
+        display: none;
+    }
+
+    #Footer-container-nav a {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    #Footer-container-buttons {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Footer-container-buttons-stores {
+        width: 410px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1439px) and (max-width: 1800px) {
+
+    footer {
+        padding: 40px 60px 20px 60px;
+    }
+
+    #Footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #Footer-container-logo {
+        width: 155px;
+        height: 57px;
+    }
+
+    #Footer-container-nav {
+        width: 281px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Footer-container-nav-mobile {
+        display: none;
+    }
+
+    #Footer-container-nav a {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    #Footer-container-buttons {
+        width: 632px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Footer-container-buttons-stores {
+        width: 410px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    footer {
+        padding: 40px 60px 20px 60px;
+    }
+
+    #Footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #Footer-container-logo {
+        width: 155px;
+        height: 57px;
+    }
+
+    #Footer-container-nav {
+        width: 481px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Footer-container-nav-mobile {
+        display: none;
+    }
+
+    #Footer-container-nav a {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 34px;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    #Footer-container-buttons {
+        width: 732px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Footer-container-buttons-stores {
+        width: 410px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Footer-container-buttons .OpenFormButton {
+        width: 282px;
+        height: 57px;
+    }
+
+    .OpenFormButton .PrimaryButtonLightBG {
+        width: 100%;
+        height: 100%;
+    }
+
+}

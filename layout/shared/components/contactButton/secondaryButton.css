@@ -1,0 +1,57 @@
+/* Initial */
+.SecondaryContactButton {
+    padding: 16px 30px 16px 30px;
+    border-radius: 16px;
+    background: inherit;
+    border: 2px solid var(--button-primary-background);
+    transition: .3s transform ease-in-out;
+    will-change: transform;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 25px;
+    color: var(--text-secondary-color);
+}
+
+/* Hover */
+
+.SecondaryContactButton:hover {
+    border: 2px solid var(--button-primary-background);
+    color: var(--text-color);
+    transform: scale(1.05);
+    will-change: transform;
+    background: var(--button-secondary-hover-color);
+}
+
+.SecondaryContactButton::after {
+    background: var(--button-secondary-hover-color);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.SecondaryContactButton:hover::after {
+    transform: translate(0, 0);
+}
+
+/* Focus */
+.SecondaryContactButton:focus {
+    border: 2px solid var(--rectangle-color);
+}
+
+/* Disabled */
+.SecondaryContactButton:disabled {
+    color: var(--button-diabled-color);
+    border: 2px solid var(--button-diabled-color);
+}

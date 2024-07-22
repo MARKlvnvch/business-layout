@@ -1,0 +1,612 @@
+#Hero-container {
+    color: var(--text-color);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #Hero-description {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    #Hero-container .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 42px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
+
+    #Hero-img img{
+        width: 295px;
+        height: 259px;
+    }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #Hero-description {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    #Hero-container .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 42px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
+
+    #Hero-img img{
+        width: 315px;
+        height: 279px;
+    }
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 500px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #Hero-description {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    #Hero-container .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 42px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
+
+    #Hero-img img{
+        width: 355px;
+        height: 319px;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #Hero-description {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    #Hero-container .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 42px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
+
+    #Hero-img img{
+        width: 405px;
+        height: 369px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #Hero-description {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    #Hero-container .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 42px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
+
+    #Hero-img img{
+        width: 455px;
+        height: 419px;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 767px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #Hero-description {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    #Hero-container .OpenFormButton {
+        width: 90%;
+        height: 57px;
+        margin-top: 30px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        width: 90%;
+        font-size: 2.5rem;
+        line-height: 42px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
+
+    #Hero-img img{
+        width: 555px;
+        height: 519px;
+    }
+
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Hero-container {
+        padding-left: 7%;
+        color: var(--text-color);
+        margin-top: 7%;
+    }
+    
+    .OpenFormButton {
+        width: 182px;
+        height: 57px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        font-size: 3rem;
+        line-height: 48px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-description {
+        width: 334px;
+        min-width: 343px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    #Hero-img img{
+        width: 395px;
+        height: 329px;
+        margin-top: 7%;
+    }
+
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1440px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Hero-container {
+        padding-left: 7%;
+        color: var(--text-color);
+        margin-top: 7%;
+    }
+
+    #Hero-container h1 {
+        font-size: 4rem;
+        line-height: 66px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #Hero-description {
+        width: 400px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+
+    #Hero-img img{
+        width: 495px;
+        height: 429px;
+    }
+
+    #Hero-img {
+        margin-top: 3%;
+    }
+
+    .OpenFormButton {
+        width: 182px;
+        height: 57px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1800px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Hero-container {
+        padding-left: 7%;
+        color: var(--text-color);
+        margin-top: 7%;
+    }
+
+    .OpenFormButton {
+        width: 192px;
+        height: 57px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+    }
+
+    #Hero-container h1 {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 102px;
+        text-align: left;
+    }
+
+    #Hero-description {
+        width: 534px;
+        min-width: 343px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    #Hero-img {
+        margin-top: 3%;
+    }
+
+    #Hero-img img{
+        width: 595px;
+        height: 529px;
+    }
+
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2200px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Hero .OpenFormButton {
+        width: 269px;
+        height: 77px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+    }
+
+    #Hero-container {
+        padding-left: 7%;
+        color: var(--text-color);
+        margin-top: 7%;
+    }
+
+    #Hero-container h1 {
+        font-size: 7rem;
+        font-weight: 700;
+        line-height: 120px;
+        text-align: left;
+    }
+
+    #Hero-description {
+        width: 834px;
+        min-width: 343px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+    }
+
+    #Hero-img {
+        margin-top: 3%;
+    }
+
+    #Hero-img img{
+        width: 695px;
+        height: 629px;
+    }
+
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2560px) {
+
+    #Hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Hero .OpenFormButton {
+        width: 269px;
+        height: 77px;
+    }
+
+    .OpenFormButton .ContactButton {
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+    }
+
+    #Hero-container {
+        padding-left: 7%;
+        color: var(--text-color);
+        margin-top: 7%;
+    }
+
+    #Hero-container h1 {
+        font-size: 8rem;
+        font-weight: 700;
+        line-height: 130px;
+        text-align: left;
+    }
+
+    #Hero-description {
+        width: 1234px;
+        min-width: 343px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    #Hero-img {
+        margin-top: 3%;
+    }
+
+    #Hero-img img{
+        width: 795px;
+        height: 729px;
+    }
+
+}

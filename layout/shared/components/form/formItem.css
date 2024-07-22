@@ -1,0 +1,209 @@
+/* Initial */
+
+.Form-item {
+    height: 66px;
+    margin-bottom: 20px;
+}
+
+.Form-item label{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.Form-item input {
+    height: 40px;
+    border-radius: 14px;
+    border: 1px solid var(--input-border-color);
+    padding: 10px 16px 10px 16px;
+    background: var(--form-bg);
+    color: var(--input-placeholder-color);
+}
+
+.Form-item input[placeholder] {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--input-placeholder-color);
+}
+
+/* Active & Typing */
+
+.Form-item input:focus {
+    border: 1px solid var(--input-border-active-color);
+}
+
+/* Filled */
+
+.Form-item input.filled {
+    color: var(--input-text-color);
+}
+
+/* Disabled */
+
+.Form-item:disabled input {
+    border: 1px solid var(--input-border-color);
+    color: var(--input-placeholder-color);
+}
+
+.Form-item:disabled label{
+    color: var(--input-placeholder-color);
+}
+
+/* Rejected & Error */
+
+input.rejected {
+    border: 1px solid var(--warning-color);
+}
+
+.requireFlag {
+    display: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--warning-color);
+}
+
+.requireFlag.active {
+    display: block;
+}
+
+.error {
+    display: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--warning-color);
+}
+
+.error.active {
+    display: block;
+}
+
+#Main-form-warning {
+    display: none;
+    font-size: 1rem;
+}
+
+#Main-form-warning.active {
+    display: block;
+}
+
+#Flag {
+    margin-left: 14px;
+    margin-top: 12px;
+    position: absolute;
+}
+
+#Flag img{
+    width: 22px;
+    height: 16px;
+}
+
+input[name='number'] {
+    padding-left: 44px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 350px) {
+
+    .Form-item input {
+        width: 293px;
+    }
+
+    .Form-item input:focus {
+        border-color: var(--input-border-active-color);
+        color: var(--input-text-color);
+    }
+
+    #number {
+        padding-left: 43px;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
+
+    .Form-item input {
+        width: 303px;
+    }
+
+    .Form-item input:focus {
+        border-color: var(--input-border-active-color);
+        color: var(--input-text-color);
+    }
+
+    #number {
+        padding-left: 43px;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1800px) {
+
+    .Form-item input {
+        width: 337px;
+    }
+
+    .Form-item input:focus {
+        border-color: var(--input-border-active-color);
+        color: var(--input-text-color);
+    }
+
+    #number {
+        padding-left: 80px;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    .Form-item {
+        height: 76px;
+        margin-bottom: 20px;
+    }
+
+    .Form-item input {
+        width: 437px;
+    }
+
+    .Form-item input:focus {
+        border-color: var(--input-border-active-color);
+        color: var(--input-text-color);
+    }
+
+    #number {
+        padding-left: 50px;
+    }
+
+    .Form-item p {
+        font-size: 1.2rem;
+    }
+
+    .Form-item span {
+        font-size: 1.2rem;
+    }
+
+    input[placeholder] {
+        font-size: 1.2rem;
+    }
+
+    #ModalForm-container-content-information p{
+        font-size: 1.2rem;
+    }
+
+    #ModalForm-container-content-information span {
+        font-size: 1.2rem;
+    }
+
+    .Form-warning {
+        font-size: 1.2rem;
+    }
+
+    #Flag img{
+        width: 26px;
+        height: 20px;
+    }
+
+}

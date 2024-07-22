@@ -1,0 +1,191 @@
+#Main-header {
+    width: 100vw;
+    background: var(--primary-color);
+    padding-left: 5%;
+    padding-right: 5%;
+    position: fixed;
+    top: 38px;
+    transition: top 0.1s;
+    z-index: 3;
+}
+
+.Header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 71px;
+}
+
+.Mobile-menu {
+    background: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    max-width: 768px;
+    position: fixed;
+    top: 0;
+    right: -769px;
+    transition: .3s ease;
+    z-index: 2;
+}
+
+.Mobile-menu.active {
+    right: 0;
+}
+
+#Mobile-menu-header {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5%;
+}
+
+#Mobile-menu-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Mobile-menu-container .OpenFormButton {
+    width: 90vw;
+    height: 57px;
+    top: 196px;
+    position: absolute;
+}
+
+.OpenFormButton .ContactButton {
+    width: 100%;
+    height: 100%;
+}
+
+#Mobile-menu-container nav {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#Mobile-menu-container ul {
+    width: 90vw;
+    top: 400px;
+    position: absolute;
+}
+
+#Mobile-menu-container li {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+}
+
+#CustomersButton {
+    display: none;
+}
+
+#CustomersButton picture {
+    cursor: pointer;
+}
+
+#Main-header-ContactButton {
+    display: none;
+}
+
+#Main-header-ContactButton.active {
+    display: block;
+}
+
+#CustomersButton.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 135px;
+    height: 57px;
+    padding: 16px 30px 16px 30px;
+    border-radius: 16px;
+    border: 1px solid var(--button-primary-background);
+}
+
+#CustomersButton.active #CustomersButton-VerticalLine {
+    height: 25px;
+    width: 1px;
+    background: var(--vertical-line-color);
+}
+
+@media screen and (max-width: 375px) {
+
+    #Mobile-menu-container li {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #Header-desktop {
+        display: none;
+    }
+
+    .Logo {
+        width: 124px;
+        height: 39px;
+    }
+
+    #Header-mobile button {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+    #Header-mobile {
+        display: none;
+    }
+
+    .Mobile-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    #Header-mobile {
+        display: none;
+    }
+
+    .Mobile-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    .Header-container {
+        height: 101px;
+    }
+
+    .Logo img{
+        width: 224px;
+        height: 79px;
+    }
+
+    #Header-desktop .ContactButton {
+        width: 269px;
+        height: 77px;
+        font-size: 2rem;
+    }
+
+    #CustomersButton.active {
+        height: 77px;
+        padding: 26px 30px 26px 30px;
+    }
+
+    #CustomersButton.active #CustomersButton-VerticalLine {
+        height: 30px;
+    }
+
+}

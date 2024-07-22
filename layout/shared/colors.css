@@ -1,0 +1,41 @@
+:root {
+
+    --primary-color: #181818;
+    --secondary-color: #FFAA4C;
+    --text-color: #FFFFFF;
+    --text-secondary-color: #000000;
+    --container-color: #F5F5F5;
+    --footer-text-color: #B9B9B9;
+    --hr-color: #444444;
+    --rectangle-color: #A64CED;
+
+    /* Button colors */
+
+    --button-primary-background: #954CED;
+    --button-focus-border-color: #BA8BF3;
+    --button-diabled-color: #B9B9B9;
+    --button-secondary-hover-color: #954CED33;
+    --button-pressed-color: #7B31D4;
+
+    /* Form colors */
+
+    --form-bg: #FFFFFF;
+    --input-border-color: #F1F1F1;
+    --input-border-active-color: #A7A7A7;
+    --input-text-color: #070707;
+    --input-placeholder-color: #A7A7A7;
+    --input-span-color: #954CED;
+    --warning-color: #EC1211;
+    --success-form-text-color: #444444;
+    --success-form-heading-color: #A64CED;
+    --shadow-color: #8D8D8D1A;
+
+    /* Cookie colors */
+
+    --cookie-text-color: #383838;
+
+    /* Customers button colors */
+
+    --vertical-line-color: #444444;
+
+}

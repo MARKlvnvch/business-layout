@@ -1,0 +1,77 @@
+body {
+    background: #181818;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Slider {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Slides {
+    display: flex;
+}
+
+.Slide {
+    min-width: 500px;
+    height: 300px;
+}
+
+.Slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Container {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Previous, .Next {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.Previous img {
+    width: 20px;
+    height: 20px;
+}
+
+.Next img{
+    width: 20px;
+    height: 20px;
+    rotate: 180deg;
+}
+
+.ItemButtons {
+    margin-top: 30px;
+}
+
+.ItemButton {
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ItemButton.active {
+    background: crimson;
+}

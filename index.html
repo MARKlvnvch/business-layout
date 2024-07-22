@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="layout/shared/style.css">
+    <link rel="stylesheet" href="layout/shared/colors.css">
+    <link rel="stylesheet" href="layout/shared/components/contactButton/primaryButton.css">
+    <link rel="stylesheet" href="layout/shared/components/contactButton/secondaryButton.css">
+    <link rel="stylesheet" href="layout/shared/components/contactButton/primaryButtonLightBG.css">
+    <link rel="stylesheet" href="layout/containers/tabs/style.css">
+    <link rel="stylesheet" href="layout/containers/header/style.css">
+    <link rel="stylesheet" href="layout/containers/hero/style.css">
+    <link rel="stylesheet" href="layout/containers/about/style.css">
+    <link rel="stylesheet" href="layout/containers/howWorks/style.css">
+    <link rel="stylesheet" href="layout/containers/statistics/style.css">
+    <link rel="stylesheet" href="layout/containers/whyBudss/style.css">
+    <link rel="stylesheet" href="layout/containers/social/style.css">
+    <link rel="stylesheet" href="layout/containers/footer/style.css">
+    <link rel="stylesheet" href="layout/modals/form/style.css">
+    <link rel="stylesheet" href="layout/modals/successModal/style.css">
+    <link rel="stylesheet" href="layout/modals/cookies/style.css">
+    <link rel="stylesheet" href="layout/shared/components/form/formItem.css">
+
+    <title>Budss</title>
+</head>
+<body>
+
+    <!-- Modal Form -->
+
+    <div class="ModalForm">
+        <div id="ModalForm-container">
+
+            <header>
+                <button class="ModalForm-closeButton" id="ModalFormCloseButton">
+                    <picture>
+                        <source srcset="layout/shared/images/icons/closeModal.png">
+                        <img alt="Close form icon" src="layout/shared/images/icons/closeModal.png">
+                    </picture>
+                </button>
+            </header>
+
+            <div id="ModalForm-container-content">
+                <form name="Form">
+
+                    <!-- Field username -->
+
+                    <div class="Form-item" id="FieldName">
+                        <label>Name<span class="requireFlag">*</span></label>
+                        <label>
+                            <input class="Form-control" placeholder="Enter name" type="text" name="username" maxlength="30" value="">
+                        </label>
+                        <span class="error"></span>
+                    </div>
+
+                    <!-- Field email -->
+
+                    <div class="Form-item" id="FieldEmail">
+                        <label>Email<span class="requireFlag">*</span></label>
+                        <label>
+                            <input class="Form-control" placeholder="Enter email" type="text" name="email" maxlength="50" value="">
+                        </label>
+                        <span class="error"></span>
+                    </div>
+
+                    <!-- Field phone number -->
+
+                    <div class="Form-item" id="FieldNumber">
+                        <label>Phone number<span class="requireFlag">*</span></label>
+                        <label>
+                            <picture id=Flag>
+                                <source srcset="layout/shared/images/flags/flag.png">
+                                <img alt="Flag country" src="layout/shared/images/flags/flag.png">
+                            </picture>
+                            <input class="Form-control" placeholder="+ 7 900 000 00 00" type="tel" name="number" value="">
+                        </label>
+                        <span class="error"></span>
+                    </div>
+
+                    <!-- Field company -->
+
+                    <div class="Form-item">
+                        <label>Company</label>
+                        <label>
+                            <input class="Form-control" placeholder="Enter company" type="text" name="company" maxlength="50" value="">
+                        </label>
+                    </div>
+
+                    <!-- Field website -->
+
+                    <div class="Form-item">
+                        <label>Website/Store URL</label>
+                        <label>
+                            <input class="Form-control" placeholder="Enter Website/Store URL" type="url" name="website" maxlength="50" value="">
+                        </label>
+                    </div>
+
+
+                    <div class="Form-warning" id="Main-form-warning">
+                        <p>Please fill in all required fields</p>
+                    </div>
+                    <div id="ModalForm-container-content-information">
+                        <p>By submitting this form you are agreeing to Budss’s <a><span>Privacy Policy</span></a> and <a><span>Terms of Use</span></a></p>
+                    </div>
+                    <button class="ContactButton" id="SubmitButton" type="submit">
+                        <span id="SubmitButton-container">Contact sales</span>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Successful Modal -->
+
+    <div class="SuccessModal">
+        <div id="SuccessModal-container">
+            <header id="SuccessModal-header">
+                <button id="SuccessModal-CloseButton">
+                    <picture>
+                        <source srcset="layout/shared/images/icons/closeModal.png">
+                        <img alt="Close successful modal" src="layout/shared/images/icons/closeModal.png">
+                    </picture>
+                </button>
+            </header>
+            <div id="SuccessModal-container-content">
+                <picture>
+                    <source srcset="layout/shared/images/form/successForm.png">
+                    <img alt="Success modal img" src="layout/shared/images/form/successForm.png">
+                </picture>
+                <span>Thank you!</span>
+                <p>Thank you, we have received your application and will contact you soon!</p>
+                <button class="ContactButton" id="ContactButton-SuccessModal">Super!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookies Modal -->
+
+    <div class="CookiesModal">
+        <div id="CookiesModal-container">
+            <header id="CookiesModal-header">
+                <button id="CookiesModal-closeButton">
+                    <picture>
+                        <source srcset="layout/shared/images/icons/closeModal.png">
+                        <img alt="Close cookie modal" src="layout/shared/images/icons/closeModal.png">
+                    </picture>
+                </button>
+            </header>
+            <div id="CookiesModal-container-content">
+                <p>This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
+                <div id="CookiesModal-container-content-buttons">
+                    <button class="PrimaryButtonLightBG" id="CookiesModal-ContactButton">Accept</button>
+                    <button class="SecondaryContactButton">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABS -->
+
+    <div id="Tabs">
+        <button class="Tab" id="BusinessTab">For Business</button>
+        <button class="Tab" id="CustomersTab">For Customers</button>
+    </div>
+
+    <!-- HEADER -->
+
+    <header id="Main-header">
+        <div class="Mobile-menu">
+            <div id="Mobile-menu-container">
+                <div id="Mobile-menu-header">
+                    <button id="CloseMobileMenu-button">
+                        <picture>
+                            <source srcset="layout/shared/images/icons/closeBurger.png">
+                            <img alt="Close mobile menu" src="layout/shared/images/icons/closeBurger.png">
+                        </picture>
+                    </button>
+                </div>
+                <div class="OpenFormButton">
+                    <button class="ContactButton">Contact sales</button>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a>For Business</a></li>
+                        <li><a>For Customers</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>Terms Of Use - Seller</a></li>
+                        <li><a>Terms of Use - Sellers & Customers</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="Header-container" id="Header-desktop">
+            <a class="Logo">
+                <picture>
+                    <source srcset="layout/shared/images/icons/logo.png">
+                    <img alt="Site logo" src="layout/shared/images/icons/logo.png">
+                </picture>
+            </a>
+            <div class="OpenFormButton">
+                <button class="ContactButton" id="Main-header-ContactButton">
+                    Contact sales
+                </button>
+            </div>
+            <div id="CustomersButton">
+                <picture>
+                    <source srcset="layout/shared/images/icons/playMarketV1.png">
+                    <img alt="PlayMarket logo" src="layout/shared/images/icons/playMarketV1.png">
+                </picture>
+                <div id="CustomersButton-VerticalLine"></div>
+                <picture>
+                    <source srcset="layout/shared/images/icons/apple.png">
+                    <img alt="Apple logo" src="layout/shared/images/icons/apple.png">
+                </picture>
+            </div>
+        </div>
+        <div class="Header-container" id="Header-mobile">
+            <a class="Logo">
+                <picture>
+                    <source srcset="layout/shared/images/icons/logo-mobile.png">
+                    <img alt="Site mobile logo" src="layout/shared/images/icons/logo-mobile.png">
+                </picture>
+            </a>
+            <button class="Menu-button">
+                <picture>
+                    <source srcset="layout/shared/images/icons/burger.png">
+                    <img alt="Open mobile menu" src="layout/shared/images/icons/burger.png">
+                </picture>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section id="Hero">
+            <div id="Hero-container">
+                <h1>Everyone</h1>
+                <h1>is an Influencer</h1>
+                <div id="Hero-description">
+                    <p>Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.</p>
+                </div>
+                <div class="OpenFormButton">
+                    <button class="ContactButton">Contact sales</button>
+                </div>
+            </div>
+            <div id="Hero-img">
+                <picture>
+                    <source srcset="layout/shared/images/hero/hero-mobile.png" media="(max-width: 768px)">
+                    <source srcset="layout/shared/images/hero/hero-desktop.png" media="(min-width: 769px)">
+                    <img alt="Hero img" src="layout/shared/images/hero/hero-desktop.png">
+                </picture>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section id="About">
+            <header id="About-header">
+                <h2>About Budss</h2>
+            </header>
+            <div id="About-container">
+                <div id="About-container-description">
+                    <p>Payment as a service, powered seamlessly by our</p><div class="About-Rectangle"><p>network of shoppers</p></div>
+                    <picture>
+                        <source srcset="layout/shared/images/about/R.png" media="(min-width: 768px)">
+                        <img alt="R" src="layout/shared/images/about/R.png">
+                    </picture>
+                </div>
+                <div id="About-container-items">
+                    <div class="About-item">
+                        <div id="About-item1">
+                            <picture>
+                                <source srcset="layout/shared/images/about/items/item1.png">
+                                <img alt="About Item 1" src="layout/shared/images/about/items/item1.png">
+                            </picture>
+                            <h3>Contactless</h3>
+                            <p>Budss uses near field communication (NFC) for making contactless payments.</p>
+                        </div>
+                    </div>
+                    <div class="About-item">
+                        <div id="About-item2">
+                            <picture>
+                                <source srcset="layout/shared/images/about/items/item2.png">
+                                <img alt="About Item 2" src="layout/shared/images/about/items/item2.png">
+                            </picture>
+                            <h3>Increased Buying Power</h3>
+                            <p>Returning customers spend up to 3X more.</p>
+                        </div>
+                    </div>
+                    <div class="About-item">
+                        <div id="About-item3">
+                            <picture>
+                                <source srcset="layout/shared/images/about/items/item3.png">
+                                <img alt="About Item 3" src="layout/shared/images/about/items/item3.png">
+                            </picture>
+                            <h3>Analytics & Insights</h3>
+                            <p>Gain a holistic view into your customers’ buying behavior & purchasing patterns.</p>
+                        </div>
+                    </div>
+                    <div class="About-item">
+                        <div id="About-item4">
+                            <picture>
+                                <source srcset="layout/shared/images/about/items/item4.png">
+                                <img alt="About Item 4" src="layout/shared/images/about/items/item4.png">
+                            </picture>
+                            <h3>Fraud Protection</h3>
+                            <p>Budss handles all payments with a fraud prevention algorithm to flag high risk purchases & a user set PIN code to keep payment info secure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW WORKS -->
+
+        <div id="HowWorks">
+            <div class="HowWorks-text">
+                <div class="HowWorks-text-content" id="HowWorks-text-content-top">
+                    How Budss Works <b>How Budss Works</b>
+                </div>
+            </div>
+            <div class="HowWorks-text">
+                <div class="HowWorks-text-content" id="HowWorks-text-content-middle">
+                    <b>How Budss Works</b> How Budss Works
+                </div>
+            </div>
+            <div class="HowWorks-text">
+                <div class="HowWorks-text-content" id="HowWorks-text-content-bottom">
+                    How Budss Works <b>How Budss Works</b>
+                </div>
+            </div>
+            <picture>
+                <source srcset="layout/shared/images/howWorks/phone.png">
+                <img alt="Phone img" src="layout/shared/images/howWorks/phone.png">
+            </picture>
+        </div>
+
+        <!-- STATISTICS -->
+
+        <section id="Statistic">
+            <div id="Statistic-container">
+                <div class="Statistic-item">
+                    <div id="Statistic-item1">
+                        <h2>15%</h2>
+                        <div class="Statistic-item-text">
+                            <p>Increase</p>
+                            <p>in Purchase Amount</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Statistic-item">
+                    <div id="Statistic-item2">
+                        <h2>30%</h2>
+                        <div class="Statistic-item-text">
+                            <p>Growth</p>
+                            <p>in Annual Sales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Statistic-item">
+                    <div id="Statistic-item3">
+                        <h2>10%</h2>
+                        <div class="Statistic-item-text">
+                            <p>Growth in New</p>
+                            <p>Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY BUDSS -->
+
+        <section id="WhyBudss">
+            <header id="WhyBudss-header">
+                <h2>Why Budss</h2>
+                <p>We Provide Advanced Payment Solutions</p>
+                <div class="WhyBudss-Rectangle"><p>To Grow Your Business</p></div>
+            </header>
+            <div id="WhyBudss-container">
+                <div class="WhyBudss-subContainer">
+                    <div class="WhyBudss-item" id="WhyBudss-item1">
+                        <div id="WhyBudss-item1-container">
+                            <h3>Turn your customers into loyal influencers</h3>
+                            <p>Budss helps businesses harness the exponential power of loyal customers for acquisition and retention.</p>
+                        </div>
+                        <div id="WhyBudss-item1-img">
+                            <picture>
+                                <source srcset="layout/shared/images/whyBudss/item1/item1-mobile.png" media="(max-width: 767px)">
+                                <source srcset="layout/shared/images/whyBudss/item1/item1-desktop.png" media="(min-width: 768px)">
+                                <img alt="WhyBudss Item 1" src="layout/shared/images/whyBudss/item1/item1-desktop.png">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="WhyBudss-item" id="WhyBudss-item2">
+                        <div id="WhyBudss-item2-container">
+                            <h3>Harness the power of buying in bulk</h3>
+                            <p>
+                                Get at least 2X more sales with Budss Buying Groups.
+                                Your customer base will grow exponentially as your
+                                customers add their friends & family to your personalized group.
+                            </p>
+                        </div>
+                        <picture id="WhyBudss-item2-img1">
+                            <source srcset="layout/shared/images/whyBudss/item2/item2-1.png">
+                            <img alt="WhyBudss Item 2-1" src="layout/shared/images/whyBudss/item2/item2-1.png">
+                        </picture>
+                        <picture id="WhyBudss-item2-img2">
+                            <source srcset="layout/shared/images/whyBudss/item2/item2-2.png">
+                            <img alt="WhyBudss Item 2-2" src="layout/shared/images/whyBudss/item2/item2-2.png">
+                        </picture>
+                        <picture id="WhyBudss-item2-img3">
+                            <source srcset="layout/shared/images/whyBudss/item2/item2-3.png">
+                            <img alt="WhyBudss Item 2-3" src="layout/shared/images/whyBudss/item2/item2-3.png">
+                        </picture>
+                    </div>
+                </div>
+                <div class="WhyBudss-subContainer">
+                    <div class="WhyBudss-item" id="WhyBudss-item3">
+                        <div id="WhyBudss-item3-container">
+                            <h3>Supercharge Loyalty With Instant Cash Back</h3>
+                            <div class="WhyBudss-subContainer">
+                                <p>Budss allows for shoppers to earn immediate cash back at their favorite stores.</p>
+                                <picture id="WhyBudss-item3-img">
+                                    <source srcset="layout/shared/images/whyBudss/item3/item3.png">
+                                    <img alt="WhyBudss Item 3" src="layout/shared/images/whyBudss/item3/item3.png">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="WhyBudss-item" id="WhyBudss-item4">
+                        <div id="WhyBudss-item4-container">
+                            <h3>Seasoned with AI and Gamification</h3>
+                            <p>
+                                AI programming creates a personalized customer journey,
+                                offering recommendations for their next purchase and optimizing rewards for after purchase.
+                            </p>
+                        </div>
+                        <div id="WhyBudss-item4-img">
+                            <picture>
+                                <source srcset="layout/shared/images/whyBudss/item4/item4.png">
+                                <img alt="WhyBudss Item 4" src="layout/shared/images/whyBudss/item4/item4.png">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL -->
+
+        <section id="Social">
+            <header id="Social-header">
+                <h2>Let  Your Business Grow</h2>
+                <div class="OpenFormButton">
+                    <button class="PrimaryButtonLightBG">Contact sales</button>
+                </div>
+            </header>
+            <div id="Social-container">
+                <div id="Social-container-description">
+                    <h3>Your Brand Awareness Maters</h3>
+                    <p>
+                        Budss is a husle free solution to put your brand on any digital surface
+                        including Instagram, Facebook, Twitter and TikTok
+                    </p>
+                </div>
+                <div id="Social-container-socialIcons">
+                    <picture id="Social-container-socialIcons-facebook">
+                        <source srcset="layout/shared/images/social/messengers/facebook.png">
+                        <img alt="Facebook logo" src="layout/shared/images/social/messengers/facebook.png">
+                    </picture>
+                    <picture id="Social-container-socialIcons-twiter">
+                        <source srcset="layout/shared/images/social/messengers/twitter.png">
+                        <img alt="Twitter logo" src="layout/shared/images/social/messengers/twitter.png">
+                    </picture>
+                    <picture id="Social-container-socialIcons-instagram">
+                        <source srcset="layout/shared/images/social/messengers/instagram.png">
+                        <img alt="Instagram logo" src="layout/shared/images/social/messengers/instagram.png">
+                    </picture>
+                    <picture id="Social-container-socialIcons-tiktok">
+                        <source srcset="layout/shared/images/social/messengers/tiktok.png">
+                        <img alt="TikTok logo" src="layout/shared/images/social/messengers/tiktok.png">
+                    </picture>
+                </div>
+            </div>
+            <div id="Social-brands">
+                <picture id="WooCommerce">
+                    <source srcset="layout/shared/images/social/markets/wooCommerce.png">
+                    <img alt="WooCommerce logo" src="layout/shared/images/social/markets/wooCommerce.png">
+                </picture>
+                <picture id="Shopify">
+                    <source srcset="layout/shared/images/social/markets/shopify.png">
+                    <img alt="Shopify logo" src="layout/shared/images/social/markets/shopify.png">
+                </picture>
+                <picture id="Square">
+                    <source srcset="layout/shared/images/social/markets/square.png">
+                    <img alt="Square logo" src="layout/shared/images/social/markets/square.png">
+                </picture>
+                <picture id="Squarespace">
+                    <source srcset="layout/shared/images/social/markets/squarespace.png">
+                    <img alt="Squarespace logo" src="layout/shared/images/social/markets/squarespace.png">
+                </picture>
+                <picture id="Clover">
+                    <source srcset="layout/shared/images/social/markets/clover.png">
+                    <img alt="Clover logo" src="layout/shared/images/social/markets/clover.png">
+                </picture>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div id="Footer-container">
+            <picture id="Footer-container-logo">
+                <source media="(max-width: 768px)" srcset="layout/shared/images/icons/logo-mobile.png">
+                <source media="(min-width: 768px)" srcset="layout/shared/images/icons/logo.png">
+                <img alt="Site logo" src="layout/shared/images/icons/logo.png">
+            </picture>
+            <nav id="Footer-container-nav">
+                <a>For Business</a>
+                <a>For Customers</a>
+            </nav>
+            <nav id="Footer-container-nav-mobile">
+                <a>For Business</a>
+                <a>For Customers</a>
+                <a>Privacy Policy</a>
+                <a>Terms Of Use - Seller</a>
+                <a>Terms of Use - Sellers & Customers</a>
+            </nav>
+            <div id="Footer-container-buttons">
+                <div class="OpenFormButton">
+                    <button class="ContactButton">Contact sales</button>
+                </div>
+                <div id="Footer-container-buttons-stores">
+                    <button>
+                        <picture id="Footer-container-buttons-googleplay">
+                            <source srcset="layout/shared/images/icons/playMarketV2.png">
+                            <img alt="PlayMarket2 logo" src="layout/shared/images/icons/playMarketV2.png">
+                        </picture>
+                    </button>
+                    <button>
+                        <picture id="Footer-container-buttons-appstore">
+                            <source srcset="layout/shared/images/icons/appStore.png">
+                            <img alt="Appstore logo" src="layout/shared/images/icons/appStore.png">
+                        </picture>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="Footer-information">
+            <p>© Copyright 2023, All Rights Reserved by Budss</p>
+            <nav id="Footer-information-links">
+                <a>Privacy Policy</a>
+                <a>Terms Of Use - Seller</a>
+                <a>Terms of Use - Sellers & Customers</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- JS FILES -->
+    <script type="module" src="layout/shared/script.js"></script>
+
+</body>
+</html>
